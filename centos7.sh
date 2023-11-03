@@ -16,5 +16,7 @@ setsebool httpd_can_network_connect on -P
 
 ##STATUS###
 clear
-echo "SETUP VPS CENTOS 7" | tail -f
-echo "===============================================" 
+echo "SETUP VPS CENTOS 7" | tee log-install.txt
+echo "===============================================" | tee -a log-install.txt
+echo "" | tee -a log-install.txt
+echo "Selesai" | tee -a log-install.txt
