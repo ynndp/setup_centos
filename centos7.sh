@@ -2,7 +2,7 @@
 
 ##COMMAND###
 timedatectl set-timezone Asia/Jakarta
-yum update -y
+yum update
 yum install firewalld
 systemctl start firewalld
 systemctl enable firewalld
