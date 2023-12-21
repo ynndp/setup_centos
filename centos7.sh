@@ -11,6 +11,9 @@ firewall-cmd --reload
 yum -y install epel-release
 rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
 yum install nginx
+systemctl start nginx
+systemctl enable nginx
+yum install nano
 setsebool httpd_can_network_connect on -P
 
 
